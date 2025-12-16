@@ -134,6 +134,8 @@ body.menu-open{
 }
 
 /* ---------------- Фиксированная шапка с меню ---------------- */
+.burger { display: none; }
+
 
 .hero__top-wrap {
   position: fixed;
