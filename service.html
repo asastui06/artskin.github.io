@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>ARTSKIN – Услуги и цены</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Шрифт Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Animate.css + основная таблица стилей -->
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- HERO / шапка сайта -->
+  <header class="hero hero--faq">
+    <div class="hero__top-wrap">
+      <div class="container">
+        <div class="topbar">
+          <div class="logo">ARTSKIN</div>
+
+          <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="masters.html">Мастера</a>
+            <a href="service.html">Услуги и Цены</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+          <div class="burger">
+            <span></span><span></span><span></span>
+          </div>
+          <a href="contacts.html" class="btn-gradient btn-gradient--small">
+            Оставить заявку
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Блок "Услуги и цены" -->
+    <section class="section-dark" id="service">
+      <div class="container">
+        <div class="prices wow animate__fadeInUp" data-wow-delay="0.2s">
+          <p class="section-label">Услуги и цены</p>
+          <h1 class="prices__title">Что мы можем для вас сделать</h1>
+          <p class="prices__subtitle">
+            Ниже ориентировочная стоимость основных услуг. Точная цена сообщается
+            после консультации и утверждения эскиза.
+          </p>
+
+          <div class="prices__card">
+            <div class="prices__table-wrap">
+              <table class="prices__table">
+                <thead>
+                  <tr>
+                    <th>Услуга</th>
+                    <th>Описание</th>
+                    <th>Ориентировочная стоимость</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Консультация</td>
+                    <td>Обсуждение идеи, подбор стиля, размеров и места нанесения.</td>
+                    <td>Бесплатно</td>
+                  </tr>
+
+                  <tr>
+                    <td>Мини-тату</td>
+                    <td>Небольшие символы, надписи, минимализм до 5×5&nbsp;см.</td>
+                    <td>от 3 000 ₽</td>
+                  </tr>
+
+                  <tr>
+                    <td>Тату среднего размера</td>
+                    <td>Работы примерно 10–15&nbsp;см: реализм, графика, хоррор и др.</td>
+                    <td>от 7 000–12 000 ₽ за сеанс</td>
+                  </tr>
+
+                  <tr>
+                    <td>Большие проекты</td>
+                    <td>Рукава, спина, композиции из нескольких элементов.</td>
+                    <td>от 15 000 ₽ за сеанс</td>
+                  </tr>
+
+                  <tr>
+                    <td>Перекрытие старой тату</td>
+                    <td>Коррекция/перекрытие неудачных работ, шрамов, старого пигмента.</td>
+                    <td>от 8 000 ₽ за сеанс</td>
+                  </tr>
+
+                  <tr>
+                    <td>Разработка индивидуального эскиза</td>
+                    <td>Авторский дизайн под вашу идею, стиль и особенности тела.</td>
+                    <td>от 2 000–5 000 ₽</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="prices__note">
+              <strong>Важно:</strong> итоговая стоимость зависит от сложности, цвета,
+              детализации и количества сеансов. Точную цену вы узнаете после личной
+              консультации с мастером.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <a href="https://t.me/vodka_strong" class="footer__telegram"></a>
+
+    <nav class="footer__nav">
+      <a href="index.html">Главная</a>
+      <a href="masters.html">Мастера</a>
+      <a href="service.html">Услуги и Цены</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <div class="footer__copy">© 2025, ARTSKIN</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW({
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
+      offset: 0,
+      mobile: true,
+      live: true
+    }).init();
+  </script>
+</body>
+</html>
