@@ -1413,6 +1413,14 @@ body.menu-open{
 
 /* ===== Мобильные (до 480px) ===== */
 @media (max-width: 480px) {
+  .topbar {
+    padding: 10px 16px;
+  }
+
+  .logo {
+    font-size: 18px;
+    letter-spacing: 0.2em;
+  }  
   .hero__title {
     font-size: 28px;
   }
