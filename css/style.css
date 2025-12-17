@@ -1300,6 +1300,10 @@ body.menu-open{
     z-index: 2000;
   }
 
+  .about__photo--second {
+    display: none;
+  }
+
   .nav.active {
     right: 0;
   }
@@ -1455,7 +1459,7 @@ body.menu-open{
   .contacts-block__map-frame {
     height: 300px;
   }
-    .footer {
+  .footer {
     padding: 36px 0 28px;
   }
 
@@ -1472,9 +1476,79 @@ body.menu-open{
   }
 
   .footer__copy {
-    font-size: 11px;          /* чуть меньше */
+    font-size: 11px;         
     line-height: 1.4;
   }
 }
 
+ 
+@media (max-width: 768px) {
+  .about__photo--second {
+    right: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .best-tattoo__item img {
+    aspect-ratio: auto;
+    height: auto;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .birthday-offer__left,
+  .birthday-offer__right {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .best-tattoo__columns {
+    flex-direction: column;  
+    gap: 10px;
+  }
+  
+  .best-tattoo__column--center {
+    padding-top: 0; 
+  } 
+
+  .best-tattoo__column {
+    width: 100%;
+  }
+
+  .best-tattoo__item img {
+    width: 100%;
+    aspect-ratio: auto;
+    height: auto;
+    border-radius: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .birthday-offer__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .birthday-offer__image img {
+    width: 90%;      
+    max-width: 360px; 
+  }
+  .birthday-offer__inner {
+    flex-direction: column;  
+    gap: 24px;
+  }
+
+  .birthday-offer__left,
+  .birthday-offer__right {
+    width: 100%;
+    flex: none;
+    text-align: center;
+  }
+}
 
