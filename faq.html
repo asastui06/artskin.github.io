@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>ARTSKIN – FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Шрифт Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Animate.css + основная таблица стилей -->
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- HERO / шапка сайта -->
+  <header class="hero hero--faq">
+    <!-- Фиксированная верхняя панель с логотипом и меню -->
+    <div class="hero__top-wrap">
+      <div class="container">
+        <div class="topbar">
+          <div class="logo">ARTSKIN</div>
+
+          <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="masters.html">Мастера</a>
+            <a href="service.html">Услуги и Цены</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+          <div class="burger">
+            <span></span><span></span><span></span>
+          </div>
+          <a href="#request.html" class="btn-gradient btn-gradient--small js-open-request">
+            Оставить заявку
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="menu-overlay"></div>
+  <main>
+    <section class="section-dark faq">
+      <div class="container faq__grid">
+        <!-- 1 -->
+        <article class="faq-card faq-card--orange wow animate__bounceInLeft" data-wow-delay="0.2s">
+          <h3 class="faq-card__title">
+            Сколько лет вам должно быть, чтобы сделать татуировку?
+          </h3>
+          <p class="faq-card__text">
+            Вам должно быть 18 лет, чтобы сделать татуировку. Без исключений.
+          </p>
+        </article>
+
+        <!-- 2 -->
+        <article class="faq-card faq-card--blue wow animate__bounceInDown" data-wow-delay="0.5s">
+          <h3 class="faq-card__title">
+            Нужно ли записываться на приём?
+          </h3>
+          <p class="faq-card__text">
+            Лучше заранее записаться на приём, но если есть свободное окно, мы примем и в этот день.
+        </p>
+          </p>
+        </article>
+
+        <!-- 3 -->
+        <article class="faq-card faq-card--orange wow animate__bounceInRight" data-wow-delay="0.4s">
+          <h3 class="faq-card__title">
+            Сколько будет стоить моя татуировка?
+          </h3>
+          <p class="faq-card__text">
+            Точная стоимость обсуждается на консультации: всё зависит от размера, стиля и сложности.
+          </p>
+        </article>    
+
+        <!-- 4 -->
+        <article class="faq-card faq-card--blue wow animate__bounceInLeft" data-wow-delay="0.8s">
+          <h3 class="faq-card__title">
+            Вы делаете подарочные сертификаты?
+          </h3>
+          <p class="faq-card__text">
+            Да, у нас можно купить сертификат на любую сумму для ваших близких.
+          </p>
+        </article>    
+
+        <!-- 5 -->
+        <article class="faq-card faq-card--orange wow animate__bounceInUp" data-wow-delay="1.2s">
+          <h3 class="faq-card__title">
+            Как сделать татуировку на тату-фестивале?
+          </h3>
+          <p class="faq-card__text">
+            Мы заранее публикуем подробности в соцсетях: список мастеров, даты и условия записи.
+          </p>
+        </article>
+
+        <!-- 6 -->
+        <article class="faq-card faq-card--blue wow animate__bounceInRight" data-wow-delay="0.6s">
+          <h3 class="faq-card__title">
+            Что мне делать после тату-сеанса?
+          </h3>
+          <p class="faq-card__text">
+            Вы получите подробную инструкцию по уходу за татуировкой, чтобы она зажила максимально красиво.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!-- Футер -->
+  <footer class="footer">
+    <a href="https://t.me/vodka_strong" class="footer__telegram"></a>
+
+    <nav class="footer__nav">
+      <a href="index.html">Главная</a>
+      <a href="masters.html">Мастера</a>
+      <a href="service.html">Услуги и Цены</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <div class="footer__copy">© 2025, ARTSKIN</div>
+  </footer>
+  <!-- Модальное окно "Оставить заявку" -->
+<div class="modal-request" id="requestModal" aria-hidden="true">
+  <div class="modal-request__backdrop"></div>
+
+  <div class="modal-request__dialog" role="dialog" aria-modal="true">
+    <button
+      class="modal-request__close"
+      type="button"
+      aria-label="Закрыть форму"
+    >
+     ×
+    </button>
+
+    <h2 class="modal-request__title">Оставить заявку</h2>
+    <p class="modal-request__subtitle">
+      Напишите пару слов о себе и желаемой татуировке — мы свяжемся с вами.
+    </p>
+
+    <form id="requestForm" class="modal-request__form" novalidate>
+      <div class="modal-request__field">
+        <label for="request-name">Имя</label>
+        <input
+          id="request-name"
+          name="name"
+          type="text"
+          placeholder="Как к вам обращаться?"
+        />
+        <div class="modal-request__error" data-error-for="name"></div>
+      </div>
+
+      <div class="modal-request__field">
+        <label for="request-phone">Телефон</label>
+        <input
+          id="request-phone"
+          name="phone"
+          type="tel"
+          inputmode="tel"
+          placeholder="+7 ХХХ ХХХ-ХХ-ХХ"
+        />
+        <div class="modal-request__error" data-error-for="phone"></div>
+      </div>
+
+      <div class="modal-request__field">
+        <label for="request-style">Стиль или идея</label>
+        <input
+          id="request-style"
+          name="style"
+          type="text"
+          placeholder="Реализм, хоррор, эскиз и т.п."
+        />
+        <div class="modal-request__error" data-error-for="style"></div>
+      </div>
+
+      <div class="modal-request__field">
+        <label for="request-comment">Комментарий</label>
+        <textarea
+          id="request-comment"
+          name="comment"
+          rows="4"
+          placeholder="Опишите размер, место, примерную идею..."
+        ></textarea>
+        <div class="modal-request__error" data-error-for="comment"></div>
+      </div>
+
+      <button class="btn-gradient modal-request__submit" type="submit">
+        Отправить заявку
+      </button>
+
+      <div class="modal-request__success" id="requestSuccess" hidden>
+        Заявка отправлена. Мы свяжемся с вами в ближайшее время.
+      </div>
+    </form>
+  </div>
+</div>
+  <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW({
+      boxClass: 'wow',             
+      animateClass: 'animate__animated', 
+      offset: 0,   
+      mobile: true,
+      live: true 
+    }).init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>ARTSKIN – Услуги и цены</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Шрифт Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Animate.css + основная таблица стилей -->
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- HERO / шапка сайта -->
+  <header class="hero hero--faq">
+    <div class="hero__top-wrap">
+      <div class="container">
+        <div class="topbar">
+          <div class="logo">ARTSKIN</div>
+
+          <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="masters.html">Мастера</a>
+            <a href="service.html">Услуги и Цены</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+          <div class="burger">
+            <span></span><span></span><span></span>
+          </div>
+          <a href="#request" class="btn-gradient btn-gradient--small js-open-request">
+            Оставить заявку
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="menu-overlay"></div>
+  <main>
+    <section class="section-dark" id="contacts">
+      <div class="container">
+        <div class="contacts-block">
+          <!-- Левая колонка: текст -->
+          <div class="contacts-block__info">
+            <p class="section-label">Контакты</p>
+            <h1 class="contacts-block__title">Тату-студия ARTSKIN</h1>
+
+            <ul class="contacts-block__list">
+              <li>
+                <span class="contacts-block__label">Время работы</span>
+                <span class="contacts-block__value">24/7 — все дни недели, без выходных</span>
+              </li>
+              <li>
+                <span class="contacts-block__label">Заявки</span>
+                <span class="contacts-block__value">
+                  Заявки на услуги принимаются круглосуточно через сайт и мессенджеры
+                </span>
+              </li>
+              <li>
+                <span class="contacts-block__label">Телефон</span>
+                <span class="contacts-block__value">
+                  <a href="tel:+79152668777">+7 (915) 266 87 77</a>
+                </span>
+              </li>
+              <li>
+                <span class="contacts-block__label">Адрес</span>
+                <span class="contacts-block__value">
+                  Москва, ул. Пушкина, д. 24
+                </span>
+              </li>
+              <li>
+                <span class="contacts-block__label">Парковка</span>
+                <span class="contacts-block__value">
+                  Бесплатная парковка для клиентов студии
+                </span>
+              </li>
+            </ul>
+
+            <p class="contacts-block__hint">
+              Лучше заранее забронировать время: так мы подготовим рабочее место и эскиз
+              именно под вас.
+            </p>
+          </div>
+
+          <!-- Правая колонка: карта -->
+          <div class="contacts-block__map">
+            <div class="contacts-block__map-inner">
+              <!-- ВСТАВЬ СЮДА iframe КАРТЫ С ГЛАВНОЙ -->
+              <iframe
+                class="contacts-block__map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.084848059371!2d37.672978792869706!3d55.77439820371267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5357e6a37fded%3A0xba1d3757a01c8265!2z0JHQsNGD0LzQsNC90YHQutCw0Y8g0YPQuy4sIDI0LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA1MDY0!5e0!3m2!1sru!2sde!4v1765142605731!5m2!1sru!2sde"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <a href="https://t.me/vodka_strong" class="footer__telegram"></a>
+
+    <nav class="footer__nav">
+      <a href="index.html">Главная</a>
+      <a href="masters.html">Мастера</a>
+      <a href="service.html">Услуги и Цены</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <div class="footer__copy">© 2025, ARTSKIN</div>
+  </footer>
+  <!-- Модальное окно "Оставить заявку" -->
+<div class="modal-request" id="requestModal" aria-hidden="true">
+  <div class="modal-request__backdrop"></div>
+
+  <div class="modal-request__dialog" role="dialog" aria-modal="true">
+    <button
+      class="modal-request__close"
+      type="button"
+      aria-label="Закрыть форму"
+    >
+     ×
+    </button>
+
+    <h2 class="modal-request__title">Оставить заявку</h2>
+    <p class="modal-request__subtitle">
+      Напишите пару слов о себе и желаемой татуировке — мы свяжемся с вами.
+    </p>
+
+    <form id="requestForm" class="modal-request__form" novalidate>
+      <div class="modal-request__field">
+        <label for="request-name">Имя</label>
+        <input
+          id="request-name"
+          name="name"
+          type="text"
+          placeholder="Как к вам обращаться?"
+        />
+        <div class="modal-request__error" data-error-for="name"></div>
+      </div>
+
+      <div class="modal-request__field">
+        <label for="request-phone">Телефон</label>
+        <input
+          id="request-phone"
+          name="phone"
+          type="tel"
+          inputmode="tel"
+          placeholder="+7 ХХХ ХХХ-ХХ-ХХ"
+        />
+        <div class="modal-request__error" data-error-for="phone"></div>
+      </div>
+
+      <div class="modal-request__field">
+        <label for="request-style">Стиль или идея</label>
+        <input
+          id="request-style"
+          name="style"
+          type="text"
+          placeholder="Реализм, хоррор, эскиз и т.п."
+        />
+        <div class="modal-request__error" data-error-for="style"></div>
+      </div>
+
+      <div class="modal-request__field">
+        <label for="request-comment">Комментарий</label>
+        <textarea
+          id="request-comment"
+          name="comment"
+          rows="4"
+          placeholder="Опишите размер, место, примерную идею..."
+        ></textarea>
+        <div class="modal-request__error" data-error-for="comment"></div>
+      </div>
+
+      <button class="btn-gradient modal-request__submit" type="submit">
+        Отправить заявку
+      </button>
+
+      <div class="modal-request__success" id="requestSuccess" hidden>
+        Заявка отправлена. Мы свяжемся с вами в ближайшее время.
+      </div>
+    </form>
+  </div>
+</div>
+  <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW({
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
+      offset: 0,
+      mobile: true,
+      live: true
+    }).init();
+  </script>
+</body>
+</html>
